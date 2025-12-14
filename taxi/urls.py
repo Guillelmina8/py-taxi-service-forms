@@ -27,13 +27,11 @@ urlpatterns = [
         ManufacturerCreateView.as_view(),
         name="manufacturer-create",
     ),
-    path("", index, name="index"),
     path(
-        "manufacturers/<int:pk>/update",
+        "manufacturers/<int:pk>/update/",
         ManufacturerUpdateView.as_view(),
         name="manufacturer-update",
     ),
-    path("", index, name="index"),
     path(
         "manufacturers/<int:pk>/delete/",
         ManufacturerDeleteView.as_view(),
